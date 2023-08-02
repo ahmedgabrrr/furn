@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav-bar></nav-bar>
+    <the-carousel></the-carousel>
+    <middle-section></middle-section>
+    <join-section></join-section>
+    <the-footer-vue></the-footer-vue>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import NavBar from "./components/NavBar.vue";
+import TheCarousel from "./components/TheCarousel.vue";
+import MiddleSection from "./components/MiddleSection.vue";
+import JoinSection from "./components/JoinSection.vue";
+import TheFooterVue from "./components/TheFooter.vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { NavBar, TheCarousel, MiddleSection, JoinSection, TheFooterVue },
+};
 </script>
 
 <style>
@@ -23,6 +27,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
